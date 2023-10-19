@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-padding {
+  @apply py-12;
+}
+.dashList {
+  @apply py-3 hover:bg-[#1f2937] rounded transition-all ease-in-out  text-center;
+}
+
+.section-heading {
+  @apply text-center font-bold text-3xl mb-10;
+}
+
+.card_div {
+  @apply flex justify-center gap-5 items-center flex-wrap;
+}
