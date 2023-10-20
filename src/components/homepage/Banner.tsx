@@ -1,6 +1,6 @@
 'use client';
 import { Playfair_Display } from 'next/font/google';
-import { usePathname } from 'next/navigation';
+
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -11,11 +11,10 @@ const playfair = Playfair_Display({
 
 export default function Banner() {
   const [searchTerm, setSearchTerm] = useState('');
-  const router = useRouter();
   const onFinishHandle = (e: any) => {
     e.preventDefault();
-    router.push(`/searchedTours/${encodeURIComponent(searchTerm)}`);
   };
+
   return (
     <div
       className="hero min-h-screen"
@@ -34,6 +33,7 @@ export default function Banner() {
             <form onSubmit={onFinishHandle} className="form-control">
               <input
                 type="text"
+                value={searchTerm}
                 placeholder="Search Destination"
                 className="input bg-transparent border-white w-72 placeholder:text-white"
                 onChange={(e) => setSearchTerm(e.target.value)}

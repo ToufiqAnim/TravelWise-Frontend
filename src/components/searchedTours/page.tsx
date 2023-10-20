@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 import { useGetSearchTourServiceQuery } from '@/redux/api/serviceApi';
 import { useParams } from 'next/navigation';
@@ -33,3 +33,4 @@ const SearchResult = () => {
 };
 
 export default SearchResult;
+ */
