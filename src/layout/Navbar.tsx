@@ -26,7 +26,7 @@ export default function Navbar() {
   };
   const totalCartItems = userInfo ? data?.data?.length : 0;
   return (
-    <div className="navbar bg-[#1f2937]  text-white p-6 px-24">
+    <div className="navbar bg-[#090c0f]  text-white p-6 px-24">
       <div className="flex-1">
         <Link
           href="/"

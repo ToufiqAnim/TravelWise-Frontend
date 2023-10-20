@@ -1,13 +1,23 @@
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['600'],
+});
 export default function FAQ() {
   return (
     <div className="section-padding">
-      <h1 className="section-heading">Frequently Asked Question</h1>
+      <h1 className={`section-heading ${playfair.className}`}>
+        Frequently Asked Question
+      </h1>
       <div className="max-w-2xl mx-auto">
         <div
           tabIndex={0}
           className="collapse collapse-plus border border-base-300 bg-base-200"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div
+            className={`collapse-title text-xl font-medium ${playfair.className} `}
+          >
             How do I book a hotel or accommodation?
           </div>
           <div className="collapse-content">
@@ -23,7 +33,9 @@ export default function FAQ() {
           tabIndex={0}
           className="collapse collapse-plus border border-base-300 bg-base-200"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div
+            className={`collapse-title text-xl font-medium ${playfair.className} `}
+          >
             How can I cancel or modify my booking?
           </div>
           <div className="collapse-content">
@@ -39,7 +51,9 @@ export default function FAQ() {
           tabIndex={0}
           className="collapse collapse-plus border border-base-300 bg-base-200"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div
+            className={`collapse-title text-xl font-medium ${playfair.className} `}
+          >
             How do I get from the airport to my hotel?
           </div>
           <div className="collapse-content">
@@ -54,7 +68,9 @@ export default function FAQ() {
           tabIndex={0}
           className="collapse collapse-plus border border-base-300 bg-base-200"
         >
-          <div className="collapse-title text-xl font-medium">
+          <div
+            className={`collapse-title text-xl font-medium ${playfair.className} `}
+          >
             What travel documents do I need for international travel?
           </div>
           <div className="collapse-content">
