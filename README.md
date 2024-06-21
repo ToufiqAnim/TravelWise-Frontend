@@ -1,4 +1,4 @@
-# Chapter-Quest
+# TravelWise
 
 ### Live Link:  [https://travel-wise-frontend.vercel.app/](https://travel-wise-frontend.vercel.app/)
 ### Frontend Github: https://github.com/ToufiqAnim/TravelWise-Frontend
